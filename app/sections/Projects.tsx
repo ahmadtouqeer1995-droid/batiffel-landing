@@ -8,25 +8,25 @@ const projects = [
     title: "Rénovation complète maison",
     type: "Particulier",
     desc: "Cuisine, salon et sols refaits à neuf",
-    image: "./projects/projet-1.jpg",
+    image: "/projects/projet-1.jpg",
   },
   {
     title: "Commerce rénové",
     type: "Professionnel",
     desc: "Comptoir, éclairage et carrelage",
-    image: "./projects/projet-2.jpg",
+    image: "/projects/projet-2.jpg",
   },
   {
     title: "Boulangerie rénovée",
     type: "Professionnel",
     desc: "Vitrine, plafond et espace vente",
-    image: "./projects/projet-3.jpg",
+    image: "/projects/projet-3.jpg",
   },
   {
     title: "Aménagement bureau",
     type: "Professionnel",
     desc: "Open space, sols et éclairage",
-    image: "./projects/projet-4.jpg",
+    image: "/projects/projet-4.jpg",
   },
 ];
 
