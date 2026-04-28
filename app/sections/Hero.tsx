@@ -56,8 +56,8 @@ export default function Hero() {
               Rénovation intérieure — Île-de-France
             </p>
             <h1 className="hero-title font-[family-name:var(--font-montserrat)] text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-[1.1] text-[#1C1917] mb-6 text-balance">
-              Transformer votre habitat{" "}
-              <span className="text-[#DC2626]">en Île-de-France</span>
+              Transformer votre habitat en{" "}
+              <span className="text-[#DC2626]">Île-de-France</span>
             </h1>
             <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed mb-10 max-w-xl">
               Peinture, électricité, carrelage et sanitaires. Particuliers et
