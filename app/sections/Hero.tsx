@@ -59,20 +59,9 @@ export default function Hero() {
               Transformer votre habitat en{" "}
               <span className="text-[#DC2626]">Île-de-France</span>
             </h1>
-            <div className="mb-10 max-w-xl">
-              <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed">
-                Peinture — Menuiserie
-              </p>
-              <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed">
-                Électricité
-              </p>
-              <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed">
-                Carrelage — Sanitaire
-              </p>
-              <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed">
-                Particuliers et professionnels en Île-de-France.
-              </p>
-            </div>
+            <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed mb-10 max-w-xl">
+              Peinture, électricité, menuiserie, carrelage et sanitaire. Particuliers et professionnels en île-de-France.
+            </p>
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
