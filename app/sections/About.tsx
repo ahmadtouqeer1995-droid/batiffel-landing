@@ -24,11 +24,7 @@ export default function About() {
                 du bâtiment afin de réaliser tout type de travaux.
               </h2>
               <p className="text-lg text-[#78716C] leading-relaxed mb-10">
-                Batiffel accompagne les particuliers et les professionnels de
-                l&apos;Île-de-France dans tous leurs projets de rénovation intérieure.
-                De la simple mise en peinture à la rénovation complète de locaux
-                commerciaux, nous intervenons avec rigueur, propreté et respect
-                des délais.
+                Batiffel accompagne les particuliers et les professionnels de l&apos;Île-de-France dans tous leurs projets de rénovation intérieure. De la simple mise en peinture à la rénovation complète de la maison et de locaux commerciaux, nous intervenons avec rigueur, propreté et respect des délais.
               </p>
               <ul className="space-y-4">
                 {points.map((point, i) => (
