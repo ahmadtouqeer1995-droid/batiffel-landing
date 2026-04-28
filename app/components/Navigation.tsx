@@ -11,7 +11,6 @@ const navLinksLeft = [
 const navLinksRight = [
   { label: "Services", href: "#services" },
   { label: "Nos clients", href: "#clients" },
-  { label: "EASERY", href: "#" },
 ];
 
 export default function Navigation() {
