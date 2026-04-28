@@ -11,8 +11,6 @@ const navLinksLeft = [
 const navLinksRight = [
   { label: "Services", href: "#services" },
   { label: "Nos clients", href: "#clients" },
-  { label: "Projets", href: "#projets" },
-  { label: "Témoignages", href: "#temoignages" },
 ];
 
 export default function Navigation() {
@@ -50,9 +48,10 @@ export default function Navigation() {
                   e.preventDefault();
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
-                className="font-[family-name:var(--font-montserrat)] text-xl font-extrabold tracking-tight text-[#1C1917] hover:opacity-70 transition-opacity"
+                className="flex items-center gap-[2px] font-[family-name:var(--font-montserrat)] text-xl font-extrabold tracking-tight text-[#1C1917] hover:opacity-70 transition-opacity"
               >
-                BATIFFEL
+                <img src="/logo.png" alt="" className="h-[110px] w-auto" />
+                <span>Batiffel</span>
               </a>
               <div className="hidden lg:flex items-center gap-6">
                 {navLinksLeft.map((link) => (
@@ -82,7 +81,7 @@ export default function Navigation() {
               ))}
               <button
                 onClick={() => handleNav("#contact")}
-                className="ml-2 px-5 py-2.5 bg-[#1C1917] text-white text-sm font-semibold rounded-full hover:scale-[1.02] hover:shadow-lg transition-all"
+                className="ml-2 px-5 py-2.5 bg-[#16A34A] text-white text-sm font-semibold rounded-full hover:scale-[1.02] hover:shadow-lg transition-all"
               >
                 Devis gratuit
               </button>
@@ -116,7 +115,7 @@ export default function Navigation() {
             }}
             className="font-[family-name:var(--font-montserrat)] text-3xl font-extrabold tracking-tight text-[#1C1917]"
           >
-            BATIFFEL
+            <span>Batiffel</span>
           </a>
           <div className="flex flex-col gap-6 mt-8">
             {[...navLinksLeft, ...navLinksRight].map((link) => (
@@ -131,7 +130,7 @@ export default function Navigation() {
           </div>
           <button
             onClick={() => handleNav("#contact")}
-            className="mt-8 px-8 py-4 bg-[#1C1917] text-white text-lg font-semibold rounded-full"
+            className="mt-8 px-8 py-4 bg-[#16A34A] text-white text-lg font-semibold rounded-full"
           >
             Demander un devis
           </button>

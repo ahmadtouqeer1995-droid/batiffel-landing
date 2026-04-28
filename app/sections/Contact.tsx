@@ -84,8 +84,8 @@ export default function Contact() {
                 Toute l&apos;Île-de-France
               </h2>
               <p className="text-[#78716C] leading-relaxed mb-8">
-                Basés à Évry-Courcouronnes (91000), nous intervenons dans un
-                rayon de 40 km autour de Paris.
+                Basés à Évry-Courcouronnes (91000), nous intervenons en
+                Île-de-France.
               </p>
 
               {/* Departments */}

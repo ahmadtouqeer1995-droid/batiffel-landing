@@ -1,7 +1,6 @@
 "use client";
 
 import SectionReveal from "../components/SectionReveal";
-import IDFMap from "../components/IDFMap";
 import { Paintbrush, Zap, Grid3X3, Droplets } from "lucide-react";
 
 const services = [
@@ -35,20 +34,23 @@ export default function Services() {
   return (
     <section id="services" className="py-16 md:py-24">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — Map */}
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-12 lg:gap-16 items-start">
+          {/* Left — Zone d'intervention + map */}
           <SectionReveal>
             <div>
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#78716C] mb-4">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#78716C] mb-1">
                 Zone d&apos;intervention
               </p>
-              <h2 className="font-[family-name:var(--font-montserrat)] text-3xl md:text-4xl font-extrabold text-[#1C1917] mb-8 text-balance">
-                Toute l&apos;Île-de-France, à proximité de Paris.
+              <h2 className="font-[family-name:var(--font-montserrat)] text-2xl md:text-3xl font-extrabold text-[#1C1917] mb-[15px] text-balance">
+                Île-de-France
               </h2>
-              <IDFMap />
-              <p className="mt-6 text-sm text-[#78716C] text-center">
-                Rayon d&apos;action : <span className="font-semibold text-[#1C1917]">40 km</span> depuis Paris
-              </p>
+              <div className="w-[700px] h-[700px] bg-white border border-[#E7E5E4] rounded-2xl overflow-hidden">
+                <img
+                  src="/ile-de-france.png"
+                  alt="Carte de l'Île-de-France"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </SectionReveal>
 

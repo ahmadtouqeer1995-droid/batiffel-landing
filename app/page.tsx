@@ -3,8 +3,6 @@ import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import About from "./sections/About";
 import Clients from "./sections/Clients";
-import Projects from "./sections/Projects";
-import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
@@ -82,8 +80,6 @@ export default function Home() {
         <Services />
         <About />
         <Clients />
-        <Projects />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />

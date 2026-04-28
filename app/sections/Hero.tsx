@@ -56,16 +56,17 @@ export default function Hero() {
               Rénovation intérieure — Île-de-France
             </p>
             <h1 className="hero-title font-[family-name:var(--font-montserrat)] text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-[1.1] text-[#1C1917] mb-6 text-balance">
-              Transformez votre intérieur avec des artisans de confiance.
+              Transformer votre habitat{" "}
+              <span className="text-[#DC2626]">en Île-de-France</span>
             </h1>
             <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed mb-10 max-w-xl">
               Peinture, électricité, carrelage et sanitaires. Particuliers et
-              professionnels, de Paris à 40 km aux alentours.
+              professionnels en Île-de-France.
             </p>
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1C1917] text-white font-semibold rounded-full hover:scale-[1.02] hover:shadow-xl transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#16A34A] text-white font-semibold rounded-full hover:scale-[1.02] hover:shadow-xl transition-all"
               >
                 Demander un devis gratuit
                 <ArrowRight size={18} />
