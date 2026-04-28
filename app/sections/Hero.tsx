@@ -60,8 +60,10 @@ export default function Hero() {
               <span className="text-[#DC2626]">Île-de-France</span>
             </h1>
             <p className="hero-subtitle text-lg md:text-xl text-[#78716C] leading-relaxed mb-10 max-w-xl">
-              Peinture, électricité, carrelage et sanitaires. Particuliers et
-              professionnels en Île-de-France.
+              Peinture — Menuiserie<br />
+              Électricité<br />
+              Carrelage — Sanitaire<br />
+              Particuliers et professionnels en Île-de-France.
             </p>
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
               <a

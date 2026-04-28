@@ -57,6 +57,9 @@ export default function Services() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              <p className="mt-4 text-sm font-semibold text-[#1C1917]">
+                Menuiserie
+              </p>
             </div>
           </SectionReveal>
 
