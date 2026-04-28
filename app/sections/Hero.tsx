@@ -11,34 +11,26 @@ export default function Hero() {
   useEffect(() => {
     if (!containerRef.current) return;
     const ctx = gsap.context(() => {
-      gsap.from(".hero-label", {
-        y: 30,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.2,
-        ease: "power3.out",
-      });
-      gsap.from(".hero-title", {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        delay: 0.4,
-        ease: "power3.out",
-      });
-      gsap.from(".hero-subtitle", {
-        y: 30,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.6,
-        ease: "power3.out",
-      });
-      gsap.from(".hero-cta", {
-        y: 20,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.8,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        ".hero-label",
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, delay: 0.2, ease: "power3.out" }
+      );
+      gsap.fromTo(
+        ".hero-title",
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 0.4, ease: "power3.out" }
+      );
+      gsap.fromTo(
+        ".hero-subtitle",
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, delay: 0.6, ease: "power3.out" }
+      );
+      gsap.fromTo(
+        ".hero-cta",
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, delay: 0.8, ease: "power3.out" }
+      );
     }, containerRef);
     return () => ctx.revert();
   }, []);

@@ -21,21 +21,38 @@ export default function SectionReveal({
 
   useEffect(() => {
     if (!ref.current) return;
+    const el = ref.current;
     const ctx = gsap.context(() => {
-      gsap.from(ref.current, {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        delay,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ref.current,
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-      });
+      gsap.fromTo(
+        el,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            toggleActions: "play none none none",
+            invalidateOnRefresh: true,
+          },
+        }
+      );
     });
-    return () => ctx.revert();
+
+    const refreshId = window.setTimeout(() => ScrollTrigger.refresh(), 100);
+    const onLoad = () => ScrollTrigger.refresh();
+    window.addEventListener("load", onLoad);
+    window.addEventListener("orientationchange", onLoad);
+
+    return () => {
+      window.clearTimeout(refreshId);
+      window.removeEventListener("load", onLoad);
+      window.removeEventListener("orientationchange", onLoad);
+      ctx.revert();
+    };
   }, [delay]);
 
   return (

@@ -51,7 +51,7 @@ export default function Navigation() {
                 }}
                 className="flex items-center gap-[2px] font-[family-name:var(--font-montserrat)] text-xl font-extrabold tracking-tight text-[#1C1917] hover:opacity-70 transition-opacity"
               >
-                <img src="/logo.png" alt="" className="h-[110px] w-auto" />
+                <img src="/logo.png" alt="" className="h-12 md:h-16 lg:h-20 w-auto" />
                 <span>Batiffel</span>
               </a>
               <div className="hidden lg:flex items-center gap-6">

@@ -50,7 +50,7 @@ export default function Services() {
               <h2 className="font-[family-name:var(--font-montserrat)] text-2xl md:text-3xl font-extrabold text-[#1C1917] mb-[15px] text-balance">
                 Île-de-France
               </h2>
-              <div className="w-[700px] h-[700px] bg-white border border-[#E7E5E4] rounded-2xl overflow-hidden">
+              <div className="w-full max-w-[700px] aspect-square bg-white border border-[#E7E5E4] rounded-2xl overflow-hidden">
                 <img
                   src="/ile-de-france.png"
                   alt="Carte de l'Île-de-France"
