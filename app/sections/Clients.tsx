@@ -21,7 +21,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section id="clients" className="py-16 md:py-24">
+    <section id="clients" className="py-16 md:py-24 overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
         <SectionReveal>
           <div className="text-center mb-16">

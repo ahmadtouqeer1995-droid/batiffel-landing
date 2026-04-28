@@ -71,9 +71,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-[#FAFAF9]">
+    <section id="contact" className="py-16 md:py-24 bg-[#FAFAF9] overflow-hidden">
       <div className="mx-auto max-w-[1280px] px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 [&>*]:min-w-0">
           {/* Left — Zone d'activité + Coordonnées */}
           <SectionReveal>
             <div>

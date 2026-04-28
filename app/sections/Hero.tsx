@@ -38,12 +38,12 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[80vh] md:min-h-screen flex items-center pt-20 pb-12 md:pb-0"
+      className="relative min-h-[80vh] md:min-h-screen flex items-center pt-20 pb-12 md:pb-0 overflow-hidden"
     >
       <div className="mx-auto max-w-[1280px] px-6 md:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center">
           {/* Left content */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 min-w-0">
             <p className="hero-label text-xs font-semibold tracking-[0.2em] uppercase text-[#78716C] mb-6">
               Rénovation intérieure — Île-de-France
             </p>
@@ -73,7 +73,7 @@ export default function Hero() {
           </div>
 
           {/* Right 3D scene */}
-          <div className="order-1 lg:order-2 flex justify-center items-center">
+          <div className="order-1 lg:order-2 flex justify-center items-center min-w-0 overflow-hidden">
             <ThreeScene />
           </div>
         </div>
