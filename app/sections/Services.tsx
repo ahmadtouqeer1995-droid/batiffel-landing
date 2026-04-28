@@ -1,7 +1,7 @@
 "use client";
 
 import SectionReveal from "../components/SectionReveal";
-import { Paintbrush, Zap, Grid3X3, Droplets } from "lucide-react";
+import { Paintbrush, Zap, Grid3X3, Droplets, Hammer } from "lucide-react";
 
 const services = [
   {
@@ -12,9 +12,9 @@ const services = [
   },
   {
     num: "02",
-    title: "Électricité",
-    desc: "Installation complète, mise aux normes et domotique.",
-    icon: Zap,
+    title: "Menuiserie",
+    desc: "Pose de portes, fenêtres, parquet et aménagements sur mesure.",
+    icon: Hammer,
   },
   {
     num: "03",
@@ -24,6 +24,12 @@ const services = [
   },
   {
     num: "04",
+    title: "Électricité",
+    desc: "Installation complète, mise aux normes et domotique.",
+    icon: Zap,
+  },
+  {
+    num: "05",
     title: "Sanitaires",
     desc: "Plomberie, installation salle de bain et WC complets.",
     icon: Droplets,
