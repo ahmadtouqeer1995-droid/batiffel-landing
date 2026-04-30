@@ -289,6 +289,7 @@ export default function Contact() {
                       <option value="electricite">Électricité</option>
                       <option value="carrelage">Carrelage</option>
                       <option value="sanitaires">Sanitaires</option>
+                      <option value="menuiserie">Menuiserie</option>
                       <option value="renovation-complete">
                         Rénovation complète
                       </option>
